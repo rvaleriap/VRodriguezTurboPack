@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/JavaScript.js"></script>
+<h1>Usuario</h1>
+
+<div class="input-group">
+    <div class="col-md-3">
+        <button type="button" class="btn btn-success " id="modalbuttonadd" onclick="GetAll()">
+Agregar
+</button>
+    </div>
+ <div class="col-md-3" >
+        <button type="button" class="btn btn-success " id="modalbuttonadd" onclick="Limpiar()">
+Limpiar
+</button>
+</div>
+</div>
+<br />
+<hr />
+
+  <div class="row">
+        <div class="col-md-12">
+            <table id="tblUsuario" class="table table-hover table table-success table-striped "  border="1" >
+                <thead>
+                    <tr>
+                        <th class="text-center" scope="col">Nombre</th>
+                        <th class="text-center " scope="col">Correo Electronico</th>
+                        <th class="text-center" scope="col">Direccion</th>
+                        <th class="text-center " scope="col">Sexo</th>
+                        <th class="text-center " scope="col">Imagen</th>
+                    </tr>
+
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
